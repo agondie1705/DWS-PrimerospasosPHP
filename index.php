@@ -1,9 +1,9 @@
 <?php
 // 1. Directivas de configuración
-informe_de_errores(E_ALL);
-conjunto_inicial('mostrar_errores','1');
-conjunto_inicial('mostrar_errores_de_inicio','1');
- 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+
 // Configuración de hora local para la fecha dinámica
 $fechaHoy=date('d/m/Y');
 $horaActual=date('H:i:s'); 
